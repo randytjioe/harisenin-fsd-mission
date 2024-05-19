@@ -1,0 +1,182 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #1e1e3f;
+  font-size: 14px;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #2c2c54;
+  padding: 1rem;
+  display: flex;
+  padding-left: 40px;
+  align-items: left;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  height: 40px;
+  margin-right: 1rem;
+  padding-left: 40px;
+}
+
+header .logo h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 50px;
+}
+
+.login-container {
+  background-color: #2c2c54;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-container p {
+  font-size: 14px;
+}
+
+.login-container h2 {
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.login-container .logo img {
+  width: 175px;
+  height: 56px;
+}
+
+.login-container p {
+  margin: 0.5rem 0;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  gap: 25px;
+}
+
+#login-form label {
+  margin: 0.5rem 0 0.25rem;
+  text-align: left;
+}
+
+#login-form input {
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: #2c2c54;
+  border-bottom: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #2c2c54;
+}
+
+#login-form .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#login-form .remember-forgot a {
+  color: #ffa500;
+}
+
+#login-form .remember-forgot input {
+  background-color: #fef4cb;
+}
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+.create-account {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.create-account a {
+  color: #ffa500;
+  padding-left: 10px;
+}
+.divider hr {
+  width: 100%;
+}
+#login-form button {
+  padding: 0.5rem;
+  background-color: #ffa500;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.google-login {
+  padding: 0.5rem;
+  background-color: #fef4cb;
+  border: none;
+  border-radius: 5px;
+  color: #1e1e3f;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  width: 100%;
+  color: #ffa500;
+}
+
+.google-login img {
+  height: 20px;
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-left: 0px;
+  }
+  header .logo img {
+  }
+  main {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    height: 100%;
+  }
+
+  #login-form input,
+  #login-form button,
+  .google-login {
+    font-size: 0.9rem;
+  }
+}

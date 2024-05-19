@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyMusic Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">MyMusic</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search Song, Album, Singer...">
+                <button class="search-btn">🔍</button>
+            </div>
+            <div class="user-info">
+                <span class="user-name">Hi, Jennie</span>
+                <img src="user-avatar.png" alt="User Avatar" class="user-avatar">
+            </div>
+        </header>
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Discover</li>
+                    <li>Library</li>
+                    <li>Albums</li>
+                    <li>Songs</li>
+                    <li>Artists</li>
+                    <li>New Releases</li>
+                </ul>
+            </nav>
+            <div class="my-music">
+                <h2>My Music</h2>
+                <ul>
+                    <li>Recently Played</li>
+                    <li>My Playlist</li>
+                </ul>
+            </div>
+            <div class="playlists">
+                <h2>My Playlists</h2>
+                <ul>
+                    <li>Selurit Utung...</li>
+                    <li>Aries</li>
+                    <li>Taylor Swift</li>
+                </ul>
+            </div>
+        </aside>
+        <main>
+            <section class="most-played">
+                <div class="section-header">Most Played Playlists</div>
+                <div class="playlist-grid">
+                    <!-- Playlist items -->
+                    <!-- Repeat similar structure for each playlist -->
+                </div>
+            </section>
+            <section class="most-played">
+                <div class="section-header">Most Played Albums</div>
+                <div class="album-grid">
+                    <!-- Album items -->
+                    <!-- Repeat similar structure for each album -->
+                </div>
+            </section>
+            <section class="most-played">
+                <div class="section-header">Most Played Songs</div>
+                <div class="song-grid">
+                    <!-- Song items -->
+                    <!-- Repeat similar structure for each song -->
+                </div>
+            </section>
+            <section class="most-played">
+                <div class="section-header">Frequently Played Artists</div>
+                <div class="artist-grid">
+                    <!-- Artist items -->
+                    <!-- Repeat similar structure for each artist -->
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="now-playing">
+                <div class="track-info">
+                    <img src="album-cover.png" alt="Album Cover" class="album-cover">
+                    <div class="track-details">
+                        <span class="track-name">Red</span>
+                        <span class="artist-name">Taylor Swift</span>
+                    </div>
+                </div>
+                <div class="player-controls">
+                    <!-- Player controls (e.g., play/pause, next, previous) -->
+                </div>
+                <div class="track-progress">
+                    <span class="current-time">1:21</span>
+                    <input type="range" value="21" max="100">
+                    <span class="total-time">6:00</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
