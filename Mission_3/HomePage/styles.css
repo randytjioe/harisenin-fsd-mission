@@ -23,7 +23,12 @@ header {
   color: #fff;
   border-bottom: 1px solid #fff;
 }
-
+header .arrow {
+  display: none;
+}
+header .material {
+  display: none;
+}
 header .logo img {
   width: 175px;
   height: 56px;
@@ -237,4 +242,34 @@ footer .track-progress {
 footer .track-progress input[type="range"] {
   margin: 0 10px;
   width: 100px;
+}
+@media (max-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2c2c54;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+  header .arrow {
+    display: flex;
+  }
+  header .material {
+    display: flex;
+  }
+  header .logo img {
+    width: 75px;
+    height: 26px;
+  }
+  header .search-bar {
+    display: none;
+  }
+  header .user-info {
+    display: none;
+  }
+  .sidebar {
+    display: none;
+  }
 }
