@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Application</title>
+    <link rel="stylesheet" href="styles.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <div class="container">
+        <div id="profile">
+            <h2>Profile</h2>
+            <p>Name: Randy</p>
+            <p>Job Title: Software Engineer</p>
+        </div>
+        <div id="time">
+            <h2>Current Time</h2>
+            <p id="current-time"></p>
+        </div>
+        <div id="new-task">
+            <h2>New Task</h2>
+            <textarea id="task-desc" placeholder="Enter your task"></textarea>
+            <select id="task-priority">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+            <button onclick="addTask()">Add Task</button>
+        </div>
+        <div id="todo-list-container">
+            <h2>To-Do List</h2>
+            <div id="todo-list"></div>
+        </div>
+        <div id="done-list-container">
+            <h2>Done</h2>
+            <div id="done-list"></div>
+        </div>
+        <button onclick="deleteAllTasks()">Delete All Tasks</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
